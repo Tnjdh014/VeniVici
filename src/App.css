@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cat-image {
+  margin-bottom: 20px; /* Add some space below the image */
+}
+
+
+.content {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: -200px; /* Adjust the top position as needed */
+  left: 50%; /* Align the text horizontally */
+  transform: translateX(-50%); /* Center the text horizontally */
+  color: white; /* Set the text color */
+  z-index: 1; /* Ensure the text is above the image */
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: space-between; /* Add space between elements */
+}
+
+.random-item-container {
+  flex: 1; /* Let this container grow to fill available space */
+}
+
+.ban-list-container {
+  width: 200px; /* Set a fixed width for the ban list */
+}
+
+.ban-list-container{
+  align-items: right;
+}
